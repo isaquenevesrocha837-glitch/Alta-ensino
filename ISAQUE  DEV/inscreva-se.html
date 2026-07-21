@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inscreva-se</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="/assets/logotipo.png">
+</head>
+<body>
+    <header>
+        <img class="logotipo" src="/assets/logotippo.jpeg" alt="logotipo">
+
+        <h1 class="textocabecalho">Alto Ensino</h1>
+
+        <nav>
+            <a href="inicio.html" class="item" > início</a>
+            <a href="nossoscursos.html" class="item">nossos cursos</a>
+            <a href="inscreva-se.html" class="item active">inscreva-se</a>
+        </nav>
+   
+       <button id="menuBtn">☰</button>
+    
+        <div id="menu" class="menu">
+            <button id="fecharMenu" class="fechar">&times;</button>
+            <a href="matriculas.html">Matriculas</a>
+            <a href="sobre nós.html">Sobre nós</a>
+            <a href="contato.html">Contato</a>
+                    <details class="menu-dropdown">
+        <summary>Veja os cursos</summary>
+        <div class="submenu">
+            <a href="psicologia.html">psiclogia</a>
+            <a href="engenhariacivil.html">engenharia civil</a>
+            <a href="arquiteturaeurbanismo.html">arq. & urbanismo</a>
+            <a href="direito.html">direito</a>
+            <a href="designgrafico.html">design gráfico</a>
+            <a href="medicina.html">medicina</a>
+            <a href="marketing.html">marketing</a>
+            <a href="enfermagem.html">enfermagem</a>
+            <a href="tecnologiadainformacao.html">tecnologia da informação</a>
+            <a href="cienciascontabeis.html">ciencias Contabéis</a>
+        </div>
+        </details>
+        </div>
+    </header>
+
+    <section class="formulario">
+        <h3>Faça sua matrícula</h3>
+
+        <form>
+
+            <label for="nome">Nome Completo</label>
+            <input type="text" id="nome" placeholder="Digite seu nome" required>
+
+            <label for="cpf">CPF</label>
+            <input type="text" id="cpf" placeholder="000.000.000-00" required>
+
+            <label for="email">E-mail</label>
+            <input type="email" id="email" placeholder="Digite seu e-mail" required>
+
+            <label for="telefone">Telefone</label>
+            <input type="tel" id="telefone" placeholder="(00) 00000-0000" required>
+
+            <label for="nascimento">Data de Nascimento</label>
+            <input type="date" id="nascimento" required>
+
+            <label for="curso">Curso</label>
+            <select id="curso" required>
+                <option value="">Selecione um curso</option>
+                <option>Enfermagem</option>
+                <option>Arquitetura e Urbanismo</option>
+                <option>Ciências Contábeis</option>
+                <option>Marketing</option>
+                <option>Design Gráfico</option>
+            </select>
+
+            <label for="mensagem">Mensagem (Opcional)</label>
+            <textarea id="mensagem" rows="5" placeholder="Escreva alguma observação..."></textarea>
+
+        <form id="formulario">
+            <button type="submit" class="botao-matriculase">Enviar Matrícula</button>
+        </form>
+
+    </section>
+</main>
+
+    <footer>
+        <h1 class="textorodape">© 2026 Alta Educação - Todos os direitos reservados</h1>
+    </footer>
+
+<script src="script.js"></script>
+</body>
+</html>

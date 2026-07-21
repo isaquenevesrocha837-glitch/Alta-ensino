@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inicio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="/assets/logotipo.png">
+</head>
+<body>
+    <header>
+        <img class="logotipo" src="/assets/logotippo.jpeg" alt="logotipo">
+
+        <h1 class="textocabecalho">Alto Ensino</h1>
+
+        <nav>
+            <a href="inicio.html" class="item active"> início</a>
+            <a href="nossoscursos.html" class="item">nossos cursos</a>
+            <a href="inscreva-se.html" class="item">inscreva-se</a>
+        </nav>
+   
+       <button id="menuBtn">☰</button>
+    
+        <div id="menu" class="menu">
+            <button id="fecharMenu" class="fechar">&times;</button>
+            <a href="sobre nós.html">Sobre nós</a>
+            <a href="contato.html">Contato</a>
+            <details class="menu-dropdown">
+        <summary>Veja os cursos</summary>
+        <div class="submenu">
+            <a href="psicologia.html">psiclogia</a>
+            <a href="engenhariacivil.html">engenharia civil</a>
+            <a href="arquiteturaeurbanismo.html">arq. & urbanismo</a>
+            <a href="direito.html">direito</a>
+            <a href="designgrafico.html">design gráfico</a>
+            <a href="medicina.html">medicina</a>
+            <a href="marketing.html">marketing</a>
+            <a href="enfermagem.html">enfermagem</a>
+            <a href="tecnologiadainformacao.html">tecnologia da informação</a>
+            <a href="cienciascontabeis.html">ciencias Contabéis</a>
+        </div>
+        </details>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="rede-ensino">
+            <h1>Nossa Rede de Ensino</h1>
+        
+            <p>
+                Na nossa instituição, acreditamos que a <span>educação</span> é a chave para transformar vidas. Oferecemos cursos de qualidade, com conteúdos atualizados e uma metodologia que une teoria e prática, preparando nossos alunos para os desafios do mercado de trabalho.
+            </p>
+        
+            <p>
+                Contamos com professores qualificados, recursos tecnológicos e um ambiente de aprendizagem acolhedor, incentivando o desenvolvimento de habilidades técnicas, profissionais e pessoais. Nosso compromisso é formar estudantes capacitados, confiantes e prontos para construir um futuro de sucesso.
+            </p>
+        
+            <p>
+                Nosso objetivo é proporcionar uma experiência de ensino inovadora, tornando o aprendizado mais dinâmico, acessível e eficiente para todos. Aqui, você encontra o caminho ideal para desenvolver seu potencial e alcançar seus objetivos.
+            </p>
+        </section>
+
+<!-- CATÁLOGO DE CURSOS -->
+<section class="carousel-section">
+    <h2>Conheça Nossos Cursos</h2>
+  
+    <div class="carousel-container">
+      <button class="nav-btn prev-btn" id="prevBtn" aria-label="Anterior">&#10094;</button>
+  
+      <div class="carousel-track-container">
+        <ul class="carousel-track" id="carouselTrack">
+          <li class="card">
+            <div>
+              <img class="card-image-box" src="/assets/psicologia - Cópia.jpeg" alt="Psicologia">
+            </div>
+            <h3>Psicologia</h3>
+          </li>
+  
+          <li class="card">
+            <div>
+              <img  class="card-image-box" src="/assets/design - Cópia.jpeg" alt="Design Gráfico">
+            </div>
+            <h3>Design Gráfico</h3>
+          </li>
+  
+          <li class="card">
+            <div >
+              <img class="card-image-box" src="/assets/direito - Cópia.jpeg" alt="Direito">
+            </div>
+            <h3>Direito</h3>
+          </li>
+  
+          <li class="card">
+            <div >
+              <img class="card-image-box" src="/assets/engenharia civil - Cópia.jpeg" alt="Engenharia Civil">
+            </div>
+            <h3>Engenharia Civil</h3>
+          </li>
+  
+          <li class="card">
+            <div>
+              <img class="card-image-box" src="/assets/arq. e urbanismo.jpeg" alt="Arq & Urbanismo">
+            </div>
+            <h3>Arq & Urbanismo</h3>
+          </li>
+        </ul>
+      </div>
+  
+      <button class="nav-btn next-btn" id="nextBtn" aria-label="Próximo">&#10095;</button>
+    </div>
+  </section>
+
+        <section>
+            <div class="pesquisa">
+                <h2>Escolha seu curso</h2>
+
+                <div class="campo-pesquisa">
+                    <span class="icone">🔍</span>
+                    <input type="text" id="pesquisa" placeholder="Ex: Administração" autocomplete="off">
+    
+                    <ul id="lista-opcoes" class="lista-suspensa escondida">
+                        <li>Psicologia</li>
+                        <li>Engenharia Civil</li>
+                        <li>Arq. & Urbanismo</li>
+                        <li>Direito</li>
+                        <li>Design Gráfico</li>
+                        <li>Medicina</li>
+                        <li>marketing</li>
+                        <li>Enfermagem</li>
+                        <li>Tecnologia da Informação</li>
+                        <li>Ciências Contabéis</li>
+                    
+                    </ul>
+                </div>
+         
+            <button type="button" id="btn-pesquisar" class="btn-pesquisar">Pesquisar</button>
+
+            </div>
+        </section>
+
+    </main>
+
+    <div class="botao ">
+      <a class="lin-ver-mais-cursos" href="nossoscursos.html">ver todos os cursos</a>
+    </div>
+
+    <footer>
+        <h1 class="textorodape">© 2026 Alta Educação - Todos os direitos reservados</h1>
+    </footer>
+
+<script src="script.js" defer></script>
+</body>
+</html>

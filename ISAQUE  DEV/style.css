@@ -1,0 +1,953 @@
+@import url('https://fonts.googleapis.com/css2?family=Antic+Didone&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color:aliceblue;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+body{
+    background-color: #0b2d5c;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+.logotipo{
+    width: 50px;      /* tamanho */
+    height: 50px;
+    border-radius: 50%; /* deixa redonda */
+    object-fit: cover;  /* ajusta a imagem */
+} 
+
+header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 15px 40px;
+    position: relative;
+    margin-top: px;
+    background-color: #f2f2f2;
+}
+
+.textocabecalho{
+    color: black;
+    font-size: 20px;
+    padding-left: 15px;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    gap: 40px;
+    padding: 15px 35px;
+    border-radius: 50px;
+
+    background: rgba(255,255,255,0.12);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    border: 1px solid rgba(255,255,255,0.2);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+}
+nav a{
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+    transition: 0.3s;
+    font-weight: bold;
+    border-radius: 20px;
+    padding: 2px 4px;
+}
+
+
+nav a:hover {
+    background-color: rgba(128, 128, 128, 0.25);
+    color: white;
+
+}
+
+h1{
+    font-family: "Antic Didone", serif;
+
+}
+
+footer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #f2f2f2;
+    justify-content: center;
+
+}
+
+.textorodape{
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.conteudotexto{
+    padding: 30px;
+    font-size: 20px;
+    text-align: center;
+    margin-left: 30px;
+    margin-right: 30px;
+
+}
+
+.paragrafos{
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.conteudotitulo{
+    padding: 30px;
+    font-size: 50px;
+    margin-left: 40px;
+}
+
+/* --- BLOCO PRINCIPAL (CONTAINER EXTERNO) --- */
+.contact-section {
+    width: 90%;
+    max-width: 800px; /* Reduzido de 1400px para compactar o bloco */
+    margin: 25px  auto;  /* Menos margem externa */
+    padding: 5px 15px; /* Padding reduzido para diminuir a altura */
+    background: rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 25px;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.35);
+    color: #F2F2F2;
+    text-align: center;
+}
+
+/* --- TEXTOS DO TOPO --- */
+.contact-section h2 {
+    font-size: 2rem;
+    margin-bottom: 5px; /* Gruda mais no subtítulo */
+}
+
+.contact-subtitle {
+    font-size: 1rem;
+    margin-bottom: 25px; /* Espaço controlado antes do conteúdo */
+    opacity: 0.8;
+}
+
+/* --- ALINHAMENTO DO CONTEÚDO (LADO A LADO) --- */
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch; /* Faz as duas colunas terem a mesma altura */
+    gap: 30px;
+    text-align: left;
+}
+
+/* --- COLUNA 1: INFORMAÇÕES (E-MAIL / TELEFONE) --- */
+.contact-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distribui as caixas verticalmente */
+}
+
+.info-box {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 15px 20px; /* Compactado */
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.info-box:hover{
+    transform: translateY(-5px);
+    border-color: #D4A017;
+    box-shadow: 0 0 20px rgba(212,160,23,.3);
+}
+
+.info-box:last-child {
+    margin-bottom: 0; /* Remove a margem da última caixa */
+}
+
+.info-box h3 {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    color: #E8E8E8;/* Cor azul combinando com seu hover */
+}
+
+.info-box h3{
+    color: #D4A017;
+  
+}
+
+
+/* --- COLUNA 2: FORMULÁRIO --- */
+.contact-form {
+    flex: 1.2; /* Dá um pouco mais de largura para o formulário */
+    display: flex;
+    flex-direction: column;
+    gap: 12px; /* Espaçamento curto entre os campos */
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.form-group label {
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+/* Campos de digitação compactos */
+.form-group input, 
+.form-group textarea {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: white;
+    padding: 10px 15px; /* Reduzido para não esticar */
+    border-radius: 10px;
+    font-family: inherit;
+    outline: none;
+    transition: 0.3s;
+}
+
+.form-group input:focus, 
+.form-group textarea:focus {
+    border-color: #D4A017;
+    background: rgba(255, 255, 255, 0.12);
+}
+
+/* Botão de Enviar */
+.btn-submit{
+    width: 100%;
+    padding: 17px;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(90deg,#0B2D5C,#2A5F9E);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.btn-submit:hover{
+    transform: translateY(-3px);
+    background: linear-gradient(90deg,#2A5F9E,#0B2D5C);
+    box-shadow: 0 0 20px rgba(42,95,158,.5);
+}
+
+/* --- RESPONSIVIDADE (PARA CELULAR) --- */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column; /* Empilha as colunas no celular */
+    }
+    
+    .contact-section {
+        padding: 20px;
+    }
+}
+
+.mensagem-sucesso{
+    display: none;
+    margin-top: 20px;
+    padding: 15px;
+    text-align: center;
+    background: rgba(40,167,69,0.2);
+    color: #7CFF9B;
+    border: 1px solid #28a745;
+    border-radius: 12px;
+    font-weight: bold;
+}
+
+.cursos{
+    width: 85%;
+    margin: 80px auto;
+}
+
+.cursos h2{
+    text-align: center;
+    font-size: 40px;
+    color: #fff;
+}
+
+.subtitulo{
+    text-align: center;
+    color: #d9d9d9;
+    margin-bottom: 50px;
+}
+
+.card-curso{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    margin-bottom: 35px;
+    padding: 25px;
+
+    background: rgba(255,255,255,.08);
+    backdrop-filter: blur(15px);
+
+    border: 1px solid rgba(255,255,255,.15);
+    border-radius: 20px;
+
+    transition: .4s;
+}
+
+.card-curso:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,.3);
+}
+
+.card-curso img{
+    width: 260px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.texto{
+    flex: 1;
+}
+
+.texto h3{
+    color: white;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.texto p{
+    color: #d8d8d8;
+    line-height: 1.8;
+    font-size: 17px;
+}
+
+.card-curso{
+    transition: .4s;
+}
+
+.card-curso:hover{
+    transform: scale(1.03);
+}
+
+/* Estilo do Botão Hambúrguer */
+.menu-btn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 35px;
+    height: 25px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 10; /* Garante que o botão fique na frente de tudo */
+  }
+  
+  .menu-btn span {
+    display: block;
+    height: 4px;
+    width: 100%;
+    background-color: #333;
+    border-radius: 2px;
+  }
+  
+  /* Estilo do Menu Lateral (Sidebar) */
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px; /* Esconde o menu totalmente para a esquerda */
+    width: 250px;
+    height: 100%;
+    background-color: #111; /* Cor de fundo do menu */
+    padding-top: 60px;
+    transition: 0.3s; /* Efeito suave ao abrir e fechar */
+    z-index: 9;
+  }
+  
+  /* Links do Menu */
+  .sidebar a {
+    padding: 15px 25px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #818181;
+    display: block;
+    transition: 0.2s;
+  }
+  
+  .sidebar a:hover {
+    color: #f1f1f1; /* Cor quando passa o mouse */
+  }
+  
+  /* Botão de fechar (X) */
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 22px;
+    font-size: 36px;
+    background: none;
+    border: none;
+    color: #818181;
+    cursor: pointer;
+  }
+  
+  /* Classe que o JavaScript vai ativar para mostrar o menu */
+  .sidebar.active {
+    left: 0; /* Move o menu de volta para a tela */
+  }
+
+/* ==========================
+
+=========================== */
+
+#menuBtn {
+    font-size: 30px;
+    padding: 10px;
+    cursor: pointer;
+    width: 50px;
+    color: black;
+    border: none;
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur;
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px rgba(0,0, 0, 0.2);
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    right: -250px;
+    width: 250px;
+    height: 100%;
+    background: rgba(80, 80, 80, 0.4);
+    backdrop-filter: blur(8px);
+   -webkit-backdrop-filter: blur(8px);
+    padding-top: 60px;
+    transition: right 0.3s;
+    z-index: 999999 !important;
+    position: fixed !important; /* Garante que o menu fique fixado por cima da tela */
+}
+
+.menu.ativo {
+    right: 0;
+}
+
+.menu a {
+    display: block;
+    color: white;
+    padding: 15px;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.menu a:hover {
+   color: #0B2D5C; 
+}
+
+#menuBtn {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+}
+
+.fechar {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.fechar:hover {
+    color: red;
+}
+
+#menuBtn {
+    transition: 0.3s;
+}
+
+#menuBtn:hover {
+    background-color: rgba(128, 128, 128, 0.25);
+    color: white;
+}
+
+/* Estilo EXCLUSIVO para o menu de cursos na barra lateral */
+#menu details.menu-dropdown {
+    margin: 10px 0;
+    width: 100%;
+    position: relative;
+    z-index: 1000000 !important;
+}
+
+#menu details.menu-dropdown summary {
+    color: inherit; /* Mantém a mesma cor de texto dos outros itens do menu */
+    cursor: pointer;
+    font-weight: bolder;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 0;
+}
+
+#menu details.menu-dropdown .submenu {
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px; /* Empurra os cursos um pouco para a direita */
+    margin-top: 8px;
+}
+
+#menu details.menu-dropdown .submenu a {
+    font-size: 0.9em; /* Deixa o texto do curso um pouco menor para dar ideia de subitem */
+    padding: 4px 0;
+}
+
+/* Efeito ao passar o mouse sobre o botão "Veja os cursos" */
+#menu details.menu-dropdown summary:hover {
+    color: #0B2D5C; /* Troque pela cor desejada (ex: amarelo) */
+}
+
+/* Efeito ao passar o mouse sobre os links dos cursos */
+#menu details.menu-dropdown .submenu a:hover {
+    color: #0B2D5C; /* Troque pela cor desejada */
+}
+
+/* Remove a seta padrão do <details> */
+#menu details.menu-dropdown summary {
+    list-style: none; /* Navegadores modernos (Chrome, Firefox, Edge) */
+}
+
+/* Remove a seta em navegadores baseados no WebKit/Safari antigos */
+#menu details.menu-dropdown summary::-webkit-details-marker {
+    display: none;
+}
+
+/* ==========================
+
+=========================== */
+
+.caixa-pesquisa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+input {
+    display: block;
+    margin: 0 auto;
+}
+
+.caixa-pesquisa {
+    display: flex;
+    justify-content: center;
+}
+
+.pesquisa {
+    width: 400px;
+    margin: 40px auto;
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(8px);
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,.2);
+}
+
+.pesquisa h2 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.campo-pesquisa {
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 30px;
+    padding: 12px 18px;
+    margin-bottom: 20px;
+    
+}
+
+.icone {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.campo-pesquisa input {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 17px;
+    background: transparent;
+    color: #111;
+}
+
+.btn-pesquisar {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 30px;
+    background: #0d6efd;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.btn-pesquisar:hover {
+    background: #0b5ed7;
+}
+
+/* Garante que a div pai é a referência para a lista flutuante */
+.campo-pesquisa {
+    position: relative;
+}
+
+/* ==========================
+
+=========================== */
+
+/* Estilo da lista suspensa */
+.lista-suspensa {
+    position: absolute;
+    top: 100%; /* Joga a lista para logo abaixo do input */
+    left: 0;
+    width: 100%;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-top: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 200px; /* Limita a altura se tiver muitos cursos */
+    overflow-y: auto; /* Adiciona barra de rolagem se passar do limite */
+    z-index: 999; /* Garante que vai ficar por cima do botão "Pesquisar" */
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Estilo de cada opção/curso */
+.lista-suspensa li {
+    padding: 12px 15px;
+    color: #333;
+    cursor: pointer;
+    text-align: left;
+}
+
+/* Efeito visual quando passa o mouse por cima da opção */
+.lista-suspensa li:hover {
+    background-color: #f0f0f0;
+}
+
+/* Classe utilitária para esconder a lista */
+.escondida {
+    display: none;
+}
+
+/* ==========================
+
+=========================== */
+
+
+.rede-ensino {
+    max-width:1100px;
+    margin: 30px auto;
+    padding: 20px 40px;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,.2);
+    color: white;
+    box-shadow: 0 15px 35px rgba(0,0,0,.3);
+    margin-bottom: 120px;
+}
+
+.rede-ensino p{
+    font-size: 18px;
+    line-height: 2;
+    color: #e6e6e6;
+    text-align: justify;
+    margin-bottom: 18px;
+}
+
+.rede-ensino h1{
+    font-size: 48px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.rede-ensino h1::after{
+    content: "";
+    width: 90px;
+    height: 5px;
+    background: #00d4ff;
+    display: block;
+    margin-top: 12px;
+    border-radius: 10px;
+}
+
+.rede-ensino span{
+    color: #00d4ff;
+    font-weight: bold;
+}
+
+/* ===========================
+   CATÁLOGO DE CURSOS
+=========================== */
+
+
+  
+  .carousel-section {
+    padding: 40px 20px;
+    text-align: center;
+     /* --- NOVO: Estilo de fundo do carrossel --- */
+     background: #112240; /* Escolha a cor de sua preferência */
+     padding: 20px 40px;  /* Espaçamento interno */
+     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3); /* Sombra para dar destaque */
+    
+  }
+  
+  .carousel-section h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+  
+ 
+  .carousel-container {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    padding: 30px 60px;
+  }
+  
+  /* Área de visibilidade que esconde o excesso */
+  .carousel-track-container {
+    overflow: hidden;
+    width: 100%;
+    padding: 13px 0;
+  }
+  
+  .carousel-track {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  /* Exibe exatos 3 itens centralizados por padrão */
+ /* Cards normais (das pontas) */
+.card {
+    min-width: calc(100% / 3);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    transform: scale(0.85); /* Fica menor nas pontas */
+    opacity: 0.75;
+  }
+  
+  /* Força SEMPRE o 2º card visível (o do meio) a ficar maior */
+  .card:nth-child(2) {
+    transform: scale(1.15) !important; /* Aumenta o tamanho */
+    opacity: 1 !important;              /* Nitidez total */
+    z-index: 2;
+  }
+  
+  .card-image-box {
+    width: 300px;
+    height: 300px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    border-radius: 75px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card-image-box img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+  
+  /* Título abaixo da imagem */
+  .card h3 {
+    margin-top: 12px;
+    font-weight: bolder;
+    font-size: 20px;
+    color: #ffffff;
+  }
+  
+  /* Botões laterais */
+  .nav-btn {
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    border: none;
+    font-size: 1.5rem;
+    padding: 12px;
+    cursor: pointer;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    transition: background 0.3s;
+  }
+  
+  .nav-btn:hover {
+    background: rgba(255, 255, 255, 0.5);
+  }
+  
+  .prev-btn { left: -25px; }
+  .next-btn { right: -25px; }
+
+.prev-btn { left: 10px; }
+.next-btn { right: 10px; }
+
+.lin-ver-mais-cursos{
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    font-weight: bolder;
+}
+
+.lin-ver-mais-cursos:hover{
+    color: #00d4ff;
+}
+
+.botao-matricula{
+    width: 100%;
+    padding: 10px 24px;
+    border: none;
+    border-radius: 30px;
+    background: #0d6efd;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .3s;
+    display: inline-block;
+    margin: 0px 10px 30px 550px;
+    width: 440px;
+}
+
+.botao-matricula:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 114, 255, 0.3);
+
+}
+
+.formulario{
+    width: 90%;
+    max-width: 700px;
+    margin: 30px auto;
+    background: rgba(255,255,255,0.12);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 35px;
+    box-shadow: 0 0 20px rgba(0,0,0,.25);
+    align-items: center;
+}
+
+.formulario h3{
+    color: white;
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 30px;
+}
+
+label{
+    color: white;
+    font-weight: bold;
+    display: block;
+    margin-top: 18px;
+    margin-bottom: 8px;
+}
+
+input,
+select,
+textarea{
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 12px;
+    color: gray;
+    font-size: 16px;
+    outline: none;
+    background: rgba(255,255,255,.95);
+}
+
+textarea{
+    resize: none;
+}
+
+.botao-matriculase{
+    width: 100%;
+    margin-top: 30px;
+    padding: 15px;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(90deg,#19d7ff,#00a8ff);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.botao-matriculase:hover{
+    transform: scale(1.03);
+    box-shadow: 0 0 15px rgba(0,255,255,.6);
+}
+
+.link-curso{
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.link-curso:visited{
+    color: inherit;
+}
+
+.link-curso:hover{
+    text-decoration: none;
+}
+
+.link-curso h3,
+.link-curso p{
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Cor do link ativo na barra de navegação superior */
+nav a.active {
+    color: #144994;
+}
+
